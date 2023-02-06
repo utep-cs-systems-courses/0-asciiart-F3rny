@@ -26,3 +26,14 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// uses both methods oftraingle and swqaure to make an up arrow
+
+void print_arrow(int leftCol, int size){
+
+   print_triangle( leftCol, size);
+   if(size % 2 == 0)
+     print_square( leftCol + size/2, size+1);   
+   else
+     print_square( leftCol + (size + 1) /2, size);
+   putchar('\n');
+}
