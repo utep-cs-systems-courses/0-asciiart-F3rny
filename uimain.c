@@ -29,12 +29,6 @@ int main()
       char cs[] = {"GAWR GURA"};
       int size = (sizeof(cs)/sizeof(cs[0]));
       for (int c = 0; c < size-1 ; ++c){
-	/*if(cs[c] == ' '){
-	  printf("%d \t ' '\n", c , cs[c]);
-	}
-	else{
-	printf("%d \t %c\n", c , cs[c]);
-	} */
 	print_char_11x16(cs[c]);
       }
       break;

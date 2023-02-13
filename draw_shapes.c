@@ -31,7 +31,7 @@ void print_triangle(int leftCol, int size)
 void print_arrow(int leftCol, int size){
 
    print_triangle( leftCol, size);
-   if(size % 2 == 0)
+   if(!(size % 2))
      print_square( leftCol + size/2, size+1);   
    else
      print_square( leftCol + (size + 1) /2, size);
